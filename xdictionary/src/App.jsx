@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 function App() {
   const [inputData, setInputData] = useState("");
@@ -20,7 +20,7 @@ function App() {
     if (foundWord) {
       setMeaning(foundWord.meaning);
     } else {
-      setMeaning("Word not found in the dictionary");
+      setMeaning("Word not found in the dictionary.");
     }
   };
 
